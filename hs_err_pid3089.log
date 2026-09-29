@@ -1,0 +1,457 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 4294967296 bytes. Error detail: committing reserved memory.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   This process has exceeded the maximum number of memory mappings (check below
+#     for `/proc/sys/vm/max_map_count` and `Total number of mappings`)
+#   This process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Zero Based Compressed Oops mode in which the Java heap is
+#     placed in the first 32GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 32GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_linux.cpp:2857), pid=3089, tid=3090
+#
+# JRE version:  (26.0.2.1+11) (build )
+# Java VM: OpenJDK 64-Bit Server VM (26.0.2.1+11-FR, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, linux-amd64)
+# Core dump will be written. Default location: Determined by the following: "/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h" (alternatively, falling back to /home/ec2-user/MinecraftServer/core.3089)
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Xmx4G -Xms4G minecraft_server.26.3.jar
+
+Host: Intel(R) Xeon(R) Platinum 8488C, 2 cores, 3G, Amazon Linux release 2023.12.20260918 (Amazon Linux)
+Time: Sun Sep 27 21:24:47 2026 UTC elapsed time: 0.064546 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007fc958019ca0):  JavaThread "Unknown thread" [_thread_in_vm, id=3090, stack(0x00007fc95fd00000,0x00007fc95fe00000) (1024K)]
+
+Stack: [0x00007fc95fd00000,0x00007fc95fe00000],  sp=0x00007fc95fdfc3b0,  free space=1008k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0x122f960]  VMError::report(outputStream*, bool)+0x2cd0  (os_linux.cpp:2857)
+V  [libjvm.so+0x1231e8e]  VMError::report_and_die(int, char const*, char const*, __va_list_tag*, Thread*, unsigned char*, void const*, void const*, char const*, int, unsigned long)+0x2be
+V  [libjvm.so+0x1232a4d]
+V  [libjvm.so+0x7f29ff]
+V  [libjvm.so+0xea2e08]  os::Linux::commit_memory_impl(char*, unsigned long, bool) [clone .part.0]+0xe8
+V  [libjvm.so+0xea3392]  os::pd_commit_memory_or_exit(char*, unsigned long, unsigned long, bool, char const*)+0x82
+V  [libjvm.so+0xe95d0d]  os::commit_memory_or_exit(char*, unsigned long, unsigned long, bool, char const*)+0x1d
+V  [libjvm.so+0x98352b]  G1PageBasedVirtualSpace::commit(unsigned long, unsigned long)+0xfb
+V  [libjvm.so+0x99957a]  G1RegionsLargerThanCommitSizeMapper::commit_regions(unsigned int, unsigned long, WorkerThreads*)+0xaa
+V  [libjvm.so+0x96cd65]  G1HeapRegionManager::commit_regions(unsigned int, unsigned long, WorkerThreads*)+0x55
+V  [libjvm.so+0x96e98b]  G1HeapRegionManager::expand(unsigned int, unsigned int, WorkerThreads*)+0x2b
+V  [libjvm.so+0x96ebbe]  G1HeapRegionManager::expand_by(unsigned int, WorkerThreads*)+0x7e
+V  [libjvm.so+0x921fb3]  G1CollectedHeap::expand(unsigned long, WorkerThreads*)+0xa3
+V  [libjvm.so+0x92264b]  G1CollectedHeap::initialize()+0x63b
+V  [libjvm.so+0x11d0fff]  universe_init()+0xef
+V  [libjvm.so+0xa3e211]  init_globals()+0x61
+V  [libjvm.so+0x11a9ee5]  Threads::create_vm(JavaVMInitArgs*, bool*)+0x2f5
+V  [libjvm.so+0xb2a50e]  JNI_CreateJavaVM+0x4e
+C  [libjli.so+0x3bfb]  JavaMain+0x8b
+C  [libjli.so+0x7ab9]  ThreadJavaMain+0x9
+Lock stack of current Java thread (top to bottom):
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007fc9615b5fc0, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+Total: 0
+
+Other Threads:
+  0x00007fc958067ca0 WorkerThread "GC Thread#0"                     [id=3091, stack(0x00007fc95dd00000,0x00007fc95de00000) (1024K)]
+  0x00007fc9580814b0 ConcurrentGCThread "G1 Main Marker"            [id=3092, stack(0x00007fc95dbff000,0x00007fc95dcff000) (1024K)]
+  0x00007fc958082650 WorkerThread "G1 Conc#0"                       [id=3093, stack(0x00007fc95dafe000,0x00007fc95dbfe000) (1024K)]
+
+[error occurred during error reporting (printing all threads), id 0xb, SIGSEGV (0xb) at pc=0x00007fc9607436d0]
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00007fc96158bac8] Heap_lock - owner thread: 0x00007fc958019ca0
+
+Heap address: 0x0000000700000000, size: 4096 MB, Compressed Oops mode: Zero based, Oop shift amount: 3
+
+CDS archive(s) mapped at: [0x0000000000000000-0x0000000000000000-0x0000000000000000), size 0, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 1.
+UseCompressedClassPointers 1, UseCompactObjectHeaders 0
+Narrow klass pointer bits 32, Max shift 3
+Narrow klass base: 0xffffffffffffffff, Narrow klass shift: -1
+Encoding Range: [0xffffffffffffffff - 0x000000007fffffff), (2147483648 bytes)
+Klass Range:    [0x0000000000000000 - 0x0000000000000000), (0 bytes)
+Klass ID Range:  [4294967295 - 0) (1)
+No protection zone.
+
+GC Precious Log:
+ CardTable entry size: 512
+ Card Set container configuration: InlinePtr #cards 4 size 8 Array Of Cards #cards 16 size 48 Howl #buckets 8 coarsen threshold 3686 Howl Bitmap #cards 512 size 80 coarsen threshold 460 Card regions per heap region 1 cards per card region 4096
+
+Heap:
+ garbage-first heap   total reserved 4194304K, committed 0K, used 0K [0x0000000700000000, 0x0000000800000000)
+  region size 2M, 0 eden (0M), 0 survivor (0M), 0 old (0M), 0 humongous (0M), 0 free (0M)
+
+Heap Regions: E=young(eden), S=young(survivor), O=old, HS=humongous(starts), HC=humongous(continues), CS=collection set, F=free, TAMS=top-at-mark-start, PB=parsable bottom
+
+Card table byte_map: [0x00007fc95e600000,0x00007fc95ee00000] _byte_map_base: 0x00007fc95ae00000
+Refinement table byte_map: [0x00007fc95de00000,0x00007fc95e600000] _byte_map_base: 0x00007fc95a600000
+
+Marking Bits: (CMBitMap*) 0x00007fc9580689c0
+ Bits: [0x00007fc93c000000, 0x00007fc940000000)
+
+GC Heap Usage History (0 events):
+No events
+
+Metaspace Usage History (0 events):
+No events
+
+Dll operation events (2 events):
+Event: 0.033 Attempting to load shared library /usr/lib/jvm/java-26-amazon-corretto.x86_64/lib/libjava.so
+Event: 0.035 Loaded shared library /usr/lib/jvm/java-26-amazon-corretto.x86_64/lib/libjava.so
+
+Deoptimization events (0 events):
+No events
+
+Classes loaded (0 events):
+No events
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+VM Operations (0 events):
+No events
+
+Memory protections (1 events):
+Event: 0.029 Protecting memory [0x00007fc95fd00000,0x00007fc95fd04000] with protection modes 0
+
+Nmethod flushes (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+700000000-800000000 ---p 00000000 00:00 0 
+557548d13000-557548d14000 r--p 00000000 103:01 9815885                   /usr/lib/jvm/java-26-amazon-corretto.x86_64/bin/java
+557548d14000-557548d15000 r-xp 00001000 103:01 9815885                   /usr/lib/jvm/java-26-amazon-corretto.x86_64/bin/java
+557548d15000-557548d16000 r--p 00002000 103:01 9815885                   /usr/lib/jvm/java-26-amazon-corretto.x86_64/bin/java
+557548d16000-557548d17000 r--p 00002000 103:01 9815885                   /usr/lib/jvm/java-26-amazon-corretto.x86_64/bin/java
+557548d17000-557548d18000 rw-p 00003000 103:01 9815885                   /usr/lib/jvm/java-26-amazon-corretto.x86_64/bin/java
+55756f219000-55756f260000 rw-p 00000000 00:00 0                          [heap]
+7fc92c000000-7fc92c021000 rw-p 00000000 00:00 0 
+7fc92c021000-7fc930000000 ---p 00000000 00:00 0 
+7fc932000000-7fc934000000 rw-p 00000000 00:00 0 
+7fc934000000-7fc934021000 rw-p 00000000 00:00 0 
+7fc934021000-7fc938000000 ---p 00000000 00:00 0 
+7fc938000000-7fc938021000 rw-p 00000000 00:00 0 
+7fc938021000-7fc940000000 ---p 00000000 00:00 0 
+7fc9401ff000-7fc94046f000 rwxp 00000000 00:00 0 
+7fc94046f000-7fc947738000 ---p 00000000 00:00 0 
+7fc947738000-7fc9479a8000 rwxp 00000000 00:00 0 
+7fc9479a8000-7fc947cc7000 ---p 00000000 00:00 0 
+7fc947cc7000-7fc947f37000 rwxp 00000000 00:00 0 
+7fc947f37000-7fc94f200000 ---p 00000000 00:00 0 
+7fc94f200000-7fc957fc4000 r--s 00000000 103:01 9817896                   /usr/lib/jvm/java-26-amazon-corretto.x86_64/lib/modules
+7fc958000000-7fc95809c000 rw-p 00000000 00:00 0 
+7fc95809c000-7fc95c000000 ---p 00000000 00:00 0 
+7fc95d412000-7fc95dafd000 rw-p 00000000 00:00 0 
+7fc95dafd000-7fc95dafe000 ---p 00000000 00:00 0 
+7fc95dafe000-7fc95dbfe000 rw-p 00000000 00:00 0 
+7fc95dbfe000-7fc95dbff000 ---p 00000000 00:00 0 
+7fc95dbff000-7fc95dcff000 rw-p 00000000 00:00 0 
+7fc95dcff000-7fc95dd00000 ---p 00000000 00:00 0 
+7fc95dd00000-7fc95de00000 rw-p 00000000 00:00 0 
+7fc95de00000-7fc95f600000 ---p 00000000 00:00 0 
+7fc95f628000-7fc95f82f000 rw-p 00000000 00:00 0 
+7fc95f82f000-7fc95f915000 ---p 00000000 00:00 0 
+7fc95f915000-7fc95f91a000 rw-p 00000000 00:00 0 
+7fc95f91a000-7fc95fa00000 ---p 00000000 00:00 0 
+7fc95fa00000-7fc95fa9d000 r--p 00000000 103:01 8527015                   /usr/lib64/libstdc++.so.6.0.33
+7fc95fa9d000-7fc95fbd5000 r-xp 0009d000 103:01 8527015                   /usr/lib64/libstdc++.so.6.0.33
+7fc95fbd5000-7fc95fc52000 r--p 001d5000 103:01 8527015                   /usr/lib64/libstdc++.so.6.0.33
+7fc95fc52000-7fc95fc5f000 r--p 00251000 103:01 8527015                   /usr/lib64/libstdc++.so.6.0.33
+7fc95fc5f000-7fc95fc60000 rw-p 0025e000 103:01 8527015                   /usr/lib64/libstdc++.so.6.0.33
+7fc95fc60000-7fc95fc64000 rw-p 00000000 00:00 0 
+7fc95fcbb000-7fc95fd00000 rw-p 00000000 00:00 0 
+7fc95fd00000-7fc95fd04000 ---p 00000000 00:00 0 
+7fc95fd04000-7fc95fe00000 rw-p 00000000 00:00 0 
+7fc95fe00000-7fc9600f4000 r--p 00000000 103:01 1712101                   /usr/lib/jvm/java-26-amazon-corretto.x86_64/lib/server/libjvm.so
+7fc9600f4000-7fc9610ff000 r-xp 002f4000 103:01 1712101                   /usr/lib/jvm/java-26-amazon-corretto.x86_64/lib/server/libjvm.so
+7fc9610ff000-7fc961421000 r--p 012ff000 103:01 1712101                   /usr/lib/jvm/java-26-amazon-corretto.x86_64/lib/server/libjvm.so
+7fc961421000-7fc961513000 r--p 01620000 103:01 1712101                   /usr/lib/jvm/java-26-amazon-corretto.x86_64/lib/server/libjvm.so
+7fc961513000-7fc96153e000 rw-p 01712000 103:01 1712101                   /usr/lib/jvm/java-26-amazon-corretto.x86_64/lib/server/libjvm.so
+7fc96153e000-7fc9615c2000 rw-p 00000000 00:00 0 
+7fc9615d2000-7fc9615d7000 rw-p 00000000 00:00 0 
+7fc9615d7000-7fc9615de000 ---p 00000000 00:00 0 
+7fc9615de000-7fc9615ea000 r--p 00000000 103:01 9817873                   /usr/lib/jvm/java-26-amazon-corretto.x86_64/lib/libjava.so
+7fc9615ea000-7fc9615f8000 r-xp 0000c000 103:01 9817873                   /usr/lib/jvm/java-26-amazon-corretto.x86_64/lib/libjava.so
+7fc9615f8000-7fc9615fd000 r--p 0001a000 103:01 9817873                   /usr/lib/jvm/java-26-amazon-corretto.x86_64/lib/libjava.so
+7fc9615fd000-7fc9615fe000 r--p 0001f000 103:01 9817873                   /usr/lib/jvm/java-26-amazon-corretto.x86_64/lib/libjava.so
+7fc9615fe000-7fc9615ff000 rw-p 00020000 103:01 9817873                   /usr/lib/jvm/java-26-amazon-corretto.x86_64/lib/libjava.so
+7fc9615ff000-7fc961600000 rw-p 00000000 00:00 0 
+7fc961600000-7fc961629000 r--p 00000000 103:01 8526965                   /usr/lib64/libc.so.6
+7fc961629000-7fc96179f000 r-xp 00029000 103:01 8526965                   /usr/lib64/libc.so.6
+7fc96179f000-7fc9617f8000 r--p 0019f000 103:01 8526965                   /usr/lib64/libc.so.6
+7fc9617f8000-7fc9617fc000 r--p 001f7000 103:01 8526965                   /usr/lib64/libc.so.6
+7fc9617fc000-7fc9617fe000 rw-p 001fb000 103:01 8526965                   /usr/lib64/libc.so.6
+7fc9617fe000-7fc96180b000 rw-p 00000000 00:00 0 
+7fc961816000-7fc96181e000 rw-s 00000000 00:21 39                         /tmp/hsperfdata_ec2-user/3089
+7fc96181e000-7fc961820000 r--p 00000000 103:01 9082827                   /usr/lib64/libnss_sss.so.2
+7fc961820000-7fc961828000 r-xp 00002000 103:01 9082827                   /usr/lib64/libnss_sss.so.2
+7fc961828000-7fc96182a000 r--p 0000a000 103:01 9082827                   /usr/lib64/libnss_sss.so.2
+7fc96182a000-7fc96182b000 r--p 0000b000 103:01 9082827                   /usr/lib64/libnss_sss.so.2
+7fc96182b000-7fc96182c000 rw-p 0000c000 103:01 9082827                   /usr/lib64/libnss_sss.so.2
+7fc961831000-7fc961833000 r--p 00000000 103:01 9817876                   /usr/lib/jvm/java-26-amazon-corretto.x86_64/lib/libjimage.so
+7fc961833000-7fc961836000 r-xp 00002000 103:01 9817876                   /usr/lib/jvm/java-26-amazon-corretto.x86_64/lib/libjimage.so
+7fc961836000-7fc961837000 r--p 00005000 103:01 9817876                   /usr/lib/jvm/java-26-amazon-corretto.x86_64/lib/libjimage.so
+7fc961837000-7fc961838000 r--p 00006000 103:01 9817876                   /usr/lib/jvm/java-26-amazon-corretto.x86_64/lib/libjimage.so
+7fc961838000-7fc961839000 rw-p 00007000 103:01 9817876                   /usr/lib/jvm/java-26-amazon-corretto.x86_64/lib/libjimage.so
+7fc961839000-7fc96183d000 r--p 00000000 103:01 8526632                   /usr/lib64/libgcc_s-14-20250110.so.1
+7fc96183d000-7fc961861000 r-xp 00004000 103:01 8526632                   /usr/lib64/libgcc_s-14-20250110.so.1
+7fc961861000-7fc961865000 r--p 00028000 103:01 8526632                   /usr/lib64/libgcc_s-14-20250110.so.1
+7fc961865000-7fc961866000 r--p 0002c000 103:01 8526632                   /usr/lib64/libgcc_s-14-20250110.so.1
+7fc961866000-7fc961867000 rw-p 00000000 00:00 0 
+7fc961867000-7fc961874000 r--p 00000000 103:01 8526968                   /usr/lib64/libm.so.6
+7fc961874000-7fc9618e4000 r-xp 0000d000 103:01 8526968                   /usr/lib64/libm.so.6
+7fc9618e4000-7fc961940000 r--p 0007d000 103:01 8526968                   /usr/lib64/libm.so.6
+7fc961940000-7fc961941000 r--p 000d8000 103:01 8526968                   /usr/lib64/libm.so.6
+7fc961941000-7fc961942000 rw-p 000d9000 103:01 8526968                   /usr/lib64/libm.so.6
+7fc961942000-7fc961944000 rw-p 00000000 00:00 0 
+7fc961944000-7fc961947000 r--p 00000000 103:01 8526988                   /usr/lib64/libz.so.1.2.11
+7fc961947000-7fc961956000 r-xp 00003000 103:01 8526988                   /usr/lib64/libz.so.1.2.11
+7fc961956000-7fc96195c000 r--p 00012000 103:01 8526988                   /usr/lib64/libz.so.1.2.11
+7fc96195c000-7fc96195d000 r--p 00018000 103:01 8526988                   /usr/lib64/libz.so.1.2.11
+7fc96195d000-7fc96195e000 rw-p 00000000 00:00 0 
+7fc961960000-7fc961961000 ---p 00000000 00:00 0 
+7fc961961000-7fc961962000 r--p 00000000 00:00 0 
+7fc961962000-7fc961963000 ---p 00000000 00:00 0 
+7fc961963000-7fc961965000 r--p 00000000 103:01 9817877                   /usr/lib/jvm/java-26-amazon-corretto.x86_64/lib/libjli.so
+7fc961965000-7fc96196e000 r-xp 00002000 103:01 9817877                   /usr/lib/jvm/java-26-amazon-corretto.x86_64/lib/libjli.so
+7fc96196e000-7fc961971000 r--p 0000b000 103:01 9817877                   /usr/lib/jvm/java-26-amazon-corretto.x86_64/lib/libjli.so
+7fc961971000-7fc961972000 r--p 0000e000 103:01 9817877                   /usr/lib/jvm/java-26-amazon-corretto.x86_64/lib/libjli.so
+7fc961972000-7fc961973000 rw-p 0000f000 103:01 9817877                   /usr/lib/jvm/java-26-amazon-corretto.x86_64/lib/libjli.so
+7fc961973000-7fc961975000 rw-p 00000000 00:00 0 
+7fc961975000-7fc961979000 r--p 00000000 00:00 0                          [vvar]
+7fc961979000-7fc96197b000 r--p 00000000 00:00 0                          [vvar_vclock]
+7fc96197b000-7fc96197d000 r-xp 00000000 00:00 0                          [vdso]
+7fc96197d000-7fc96197f000 r--p 00000000 103:01 8526961                   /usr/lib64/ld-linux-x86-64.so.2
+7fc96197f000-7fc9619a7000 r-xp 00002000 103:01 8526961                   /usr/lib64/ld-linux-x86-64.so.2
+7fc9619a7000-7fc9619b3000 r--p 0002a000 103:01 8526961                   /usr/lib64/ld-linux-x86-64.so.2
+7fc9619b3000-7fc9619b5000 r--p 00036000 103:01 8526961                   /usr/lib64/ld-linux-x86-64.so.2
+7fc9619b5000-7fc9619b7000 rw-p 00038000 103:01 8526961                   /usr/lib64/ld-linux-x86-64.so.2
+7ffe7acfb000-7ffe7ad1c000 rw-p 00000000 00:00 0                          [stack]
+ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0                  [vsyscall]
+Total number of mappings: 110
+
+JVMTI agents: none
+
+
+VM Arguments:
+jvm_args: -Xmx4G -Xms4G 
+java_command: minecraft_server.26.3.jar
+java_class_path (initial): minecraft_server.26.3.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     bool AOTAdapterCaching                        = false                                  {diagnostic} {ergonomic}
+     bool AOTInvokeDynamicLinking                  = false                                  {diagnostic} {ergonomic}
+     bool AOTRecordTraining                        = false                                  {diagnostic} {ergonomic}
+     bool AOTReplayTraining                        = false                                  {diagnostic} {ergonomic}
+     bool AOTStubCaching                           = false                                  {diagnostic} {ergonomic}
+     intx CICompilerCount                          = 2                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 1                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 2                                         {product} {ergonomic}
+     uint G1EagerReclaimRemSetThreshold            = 16                                   {experimental} {ergonomic}
+   size_t G1HeapRegionSize                         = 2097152                                   {product} {ergonomic}
+     uint G1RemSetArrayOfCardsEntries              = 16                                   {experimental} {ergonomic}
+     uint G1RemSetHowlMaxNumBuckets                = 8                                    {experimental} {ergonomic}
+     uint G1RemSetHowlNumBuckets                   = 8                                    {experimental} {ergonomic}
+   size_t InitialHeapSize                          = 4294967296                                {product} {command line}
+     bool IntelJccErratumMitigation                = false                             {ARCH diagnostic} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MarkStackSizeMax                         = 536870912                                 {product} {ergonomic}
+   size_t MaxHeapSize                              = 4294967296                                {product} {command line}
+ uint64_t MaxRAM                                   = 4001345536                                {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 2097152                                   {product} {ergonomic}
+   size_t MinHeapSize                              = 4294967296                                {product} {command line}
+   size_t NonNMethodCodeHeapSize                   = 5828608                                {pd product} {ergonomic}
+   size_t NonProfiledCodeHeapSize                  = 122916864                              {pd product} {ergonomic}
+   size_t ProfiledCodeHeapSize                     = 122916864                              {pd product} {ergonomic}
+   size_t ReservedCodeCacheSize                    = 251662336                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 4294967296                             {manageable} {ergonomic}
+     bool THPStackMitigation                       = false                                  {diagnostic} {ergonomic}
+     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
+     bool UseCondCardMark                          = true                                      {product} {ergonomic}
+     bool UseFastUnorderedTimeStamps               = true                                 {experimental} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+      int X86ICacheSync                            = 3                                 {ARCH diagnostic} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags foldmultilines=false
+ #1: stderr all=off uptime,level,tags foldmultilines=false
+
+Release file:
+<release file has not been read>
+Environment Variables:
+PATH=/home/ec2-user/.local/bin:/home/ec2-user/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+SHELL=/bin/bash
+LANG=C.UTF-8
+TERM=xterm
+
+Active Locale:
+LC_ALL=C
+LC_COLLATE=C
+LC_CTYPE=C
+LC_MESSAGES=C
+LC_MONETARY=C
+LC_NUMERIC=C
+LC_TIME=C
+
+Signal Handlers:
+   SIGSEGV: crash_handler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO, unblocked
+    SIGBUS: crash_handler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO, unblocked
+    SIGFPE: crash_handler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO, unblocked
+   SIGPIPE: javaSignalHandler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO, blocked
+   SIGXFSZ: javaSignalHandler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO, blocked
+    SIGILL: crash_handler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO, unblocked
+   SIGUSR2: SR_handler in libjvm.so, mask=00000000000000000000000000000000, flags=SA_RESTART|SA_SIGINFO, blocked
+    SIGHUP: SIG_DFL, mask=00000000000000000000000000000000, flags=none, blocked
+    SIGINT: SIG_DFL, mask=00000000000000000000000000000000, flags=none, blocked
+   SIGTERM: SIG_DFL, mask=00000000000000000000000000000000, flags=none, blocked
+   SIGQUIT: UserHandler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO, blocked
+   SIGTRAP: crash_handler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO, unblocked
+
+
+Compilation memory statistics disabled.
+
+Periodic native trim disabled
+
+---------------  S Y S T E M  ---------------
+
+OS:
+Amazon Linux release 2023.12.20260918 (Amazon Linux)
+uname: Linux 6.18.48-109.150.amzn2023.x86_64 #2 SMP PREEMPT_DYNAMIC Wed Sep 16 22:54:13 UTC 2026 x86_64
+OS uptime: 0 days 0:03 hours
+libc: glibc 2.34 NPTL 2.34 
+rlimit (soft/hard): STACK 10240k/10240k , CORE infinity/infinity , NPROC infinity/infinity , NOFILE 65535/65535 , AS infinity/infinity , CPU infinity/infinity , DATA infinity/infinity , FSIZE infinity/infinity , MEMLOCK infinity/infinity
+load average: 0.01 0.02 0.00
+
+/proc/meminfo:
+MemTotal:        3907564 kB
+MemFree:         3457196 kB
+MemAvailable:    3521288 kB
+Buffers:            2168 kB
+Cached:           259184 kB
+SwapCached:            0 kB
+Active:            80732 kB
+Inactive:         238248 kB
+Active(anon):        472 kB
+Inactive(anon):    57796 kB
+Active(file):      80260 kB
+Inactive(file):   180452 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Zswap:                 0 kB
+Zswapped:              0 kB
+Dirty:               120 kB
+Writeback:             0 kB
+AnonPages:         57660 kB
+Mapped:            58292 kB
+Shmem:               612 kB
+KReclaimable:      15432 kB
+Slab:              49748 kB
+SReclaimable:      15432 kB
+SUnreclaim:        34316 kB
+KernelStack:        2696 kB
+PageTables:         2856 kB
+SecPageTables:         0 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     1953780 kB
+Committed_AS:     295152 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       12804 kB
+VmallocChunk:          0 kB
+Percpu:              912 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+Unaccepted:            0 kB
+Balloon:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:       86448 kB
+DirectMap2M:     2957312 kB
+DirectMap1G:     1048576 kB
+
+/sys/kernel/mm/transparent_hugepage/enabled: always [madvise] never
+/sys/kernel/mm/transparent_hugepage/hpage_pmd_size: 2097152
+/sys/kernel/mm/transparent_hugepage/shmem_enabled: always within_size advise [never] deny force
+/sys/kernel/mm/transparent_hugepage/defrag (defrag/compaction efforts parameter): always defer defer+madvise [madvise] never
+
+Process Memory:
+Virtual Size: 5016792K (peak: 5042476K)
+Resident Set Size: 22036K (peak: 22036K) (anon: 7520K, file: 14484K, shmem: 32K)
+Swapped out: 0K
+C-Heap outstanding allocations: 9873K, retained: 570K
+glibc malloc tunables: (default)
+
+/proc/sys/kernel/threads-max (system-wide limit on the number of threads): 30288
+/proc/sys/vm/max_map_count (maximum number of memory map areas a process may have): 65530
+/proc/sys/vm/swappiness (control to define how aggressively the kernel swaps out anonymous memory): 60
+/proc/sys/kernel/pid_max (system-wide limit on number of process identifiers): 4194304
+
+container information not found.
+KVM virtualization detected
+Steal ticks since vm start: 0
+Steal ticks percentage since vm start:  0.000
+
+CPU: total 2 (initial active 2) (1 cores per cpu, 2 threads per core) family 6 model 143 stepping 8 microcode 0x2b000661, cx8, cmov, fxsr, ht, mmx, 3dnowpref, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, lzcnt, tsc, tscinvbit, avx, avx2, aes, erms, clmul, bmi1, bmi2, adx, avx512f, avx512dq, avx512cd, avx512bw, avx512vl, sha, fma, vzeroupper, avx512_vpopcntdq, avx512_vpclmulqdq, avx512_vaes, avx512_vnni, clflush, clflushopt, clwb, avx512_vbmi2, avx512_vbmi, hv, serialize, rdtscp, rdpid, gfni, avx512_bitalg, f16c, pku, ospke, avx512_ifma, avx512_fp16
+CPU Model and flags from /proc/cpuinfo:
+model name	: Intel(R) Xeon(R) Platinum 8488C
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch cpuid_fault ssbd ibrs ibpb stibp ibrs_enhanced fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves avx_vnni avx512_bf16 wbnoinvd ida arat avx512vbmi umip pku ospke waitpkg avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg tme avx512_vpopcntdq rdpid cldemote movdiri movdir64b md_clear serialize amx_bf16 avx512_fp16 amx_tile amx_int8 flush_l1d arch_capabilities
+
+Online cpus: 0-1
+Offline cpus: 
+BIOS frequency limitation: <Not Available>
+Frequency switch latency (ns): <Not Available>
+Available cpu frequencies: <Not Available>
+Current governor: <Not Available>
+Core performance/turbo boost: <Not Available>
+
+Memory: 4k page, physical 3907564k(3521288k free), swap 0k(0k free)
+Page Sizes: 4k
+
+vm_info: OpenJDK 64-Bit Server VM (26.0.2.1+11-FR) for linux-amd64 JRE (26.0.2.1+11-FR), built on 2024-08-05T00:00:00Z with gcc 11.5.0 20240719 (Red Hat 11.5.0-5)
+
+END.

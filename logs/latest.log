@@ -1,236 +1,36 @@
-[19:47:53] [ServerMain/INFO]: Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
-[19:47:56] [Worker-Main-1/INFO]: Loaded 1866 advancements
-[19:47:56] [Server thread/INFO]: Starting minecraft server version 26.3
-[19:47:56] [Server thread/INFO]: Loading properties
-[19:47:56] [Server thread/INFO]: Default game type: SURVIVAL
-[19:47:56] [Server thread/INFO]: Generating keypair
-[19:47:56] [Server thread/INFO]: Starting Minecraft server on *:25565
-[19:47:56] [Server thread/INFO]: Preparing level "world"
-[19:47:57] [Server thread/INFO]: Loading 0 persistent chunks...
-[19:47:57] [Server thread/INFO]: Preparing spawn area: 100%
-[19:47:57] [Server thread/INFO]: Time elapsed: 11 ms
-[19:47:57] [Server thread/INFO]: Done (0.303s)! For help, type "help"
-[19:47:57] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[19:47:57] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
-[19:47:57] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
-[19:48:17] [User Authenticator #1/INFO]: UUID of player joey991 is c3048e58-c575-41b5-a66c-dc3c9c86f778
-[19:48:19] [Server thread/INFO]: joey991[/187.184.123.201:64288] logged in with entity id 40 at (57.75677536002186, 38.0, -72.86757461948004)
-[19:48:19] [Server thread/INFO]: System chat: joey991 joined the game
-[19:48:29] [User Authenticator #2/INFO]: UUID of player Jysusplash is fe5c1414-b0c1-43ba-9011-d7b6546d2bdd
-[19:48:29] [Server thread/INFO]: Jysusplash[/189.203.192.90:9008] logged in with entity id 357 at (22.18145203017762, 65.0, -23.69999998807907)
-[19:48:29] [Server thread/INFO]: System chat: Jysusplash joined the game
-[19:48:31] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:48:44] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:48:46] [User Authenticator #3/INFO]: UUID of player AnsharST is 3aff4fa4-6e7a-48cc-9576-84b605c2cbbe
-[19:48:47] [Server thread/INFO]: AnsharST[/189.172.67.235:51977] logged in with entity id 422 at (-93.06470763119441, 25.0, -1.621448975381343)
-[19:48:47] [Server thread/INFO]: System chat: AnsharST joined the game
-[19:48:53] [Server thread/INFO]: System chat: Jysusplash has made the advancement [Getting an Upgrade]
-[19:48:55] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[19:48:56] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:48:59] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[19:49:11] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:49:14] [Server thread/INFO]: System chat: Jysusplash hit the ground too hard
-[19:49:23] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[19:49:25] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:49:41] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[19:49:42] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:49:49] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[19:49:54] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:50:00] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[19:50:01] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[19:50:05] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:50:12] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[19:50:17] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:50:27] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[19:50:28] [Server thread/INFO]: Jysusplash lost connection: Disconnected
-[19:50:28] [Server thread/INFO]: System chat: Jysusplash left the game
-[19:50:35] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:50:39] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[19:50:48] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:50:52] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[19:51:16] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[19:51:28] [User Authenticator #4/INFO]: UUID of player Jysusplash is fe5c1414-b0c1-43ba-9011-d7b6546d2bdd
-[19:51:28] [Server thread/INFO]: Jysusplash[/189.203.192.90:9172] logged in with entity id 1526 at (8.030072256077075, 64.0, -13.823836542838643)
-[19:51:28] [Server thread/INFO]: System chat: Jysusplash joined the game
-[19:51:30] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:51:31] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[19:51:40] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[19:51:41] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:51:50] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[19:51:51] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[19:52:00] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:52:01] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[19:52:02] [Server thread/INFO]: System chat: Jysusplash has made the advancement [Stone Age]
-[19:52:13] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[19:52:14] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:52:25] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:52:27] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[19:52:41] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[19:52:42] [Server thread/INFO]: Jysusplash lost connection: Disconnected
-[19:52:42] [Server thread/INFO]: System chat: Jysusplash left the game
-[19:52:46] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:52:53] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[19:53:02] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:53:44] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:53:48] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[19:53:58] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:54:14] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:54:15] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[19:54:24] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:54:42] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:55:25] [User Authenticator #5/INFO]: UUID of player Jysusplash is fe5c1414-b0c1-43ba-9011-d7b6546d2bdd
-[19:55:25] [Server thread/INFO]: Jysusplash[/189.203.192.90:9025] logged in with entity id 2601 at (-50.90795466251953, 28.0, -13.98515146156324)
-[19:55:25] [Server thread/INFO]: System chat: Jysusplash joined the game
-[19:55:40] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:55:52] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[19:55:53] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:55:53] [Server thread/INFO]: System chat: joey991 fell from a high place
-[19:56:07] [Server thread/INFO]: System chat: Jysusplash has made the advancement [Acquire Hardware]
-[19:56:10] [Server thread/INFO]: System chat: joey991 fell from a high place
-[19:56:16] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:56:30] [Server thread/INFO]: System chat: Jysusplash has made the advancement [Isn't It Iron Pick?]
-[19:56:31] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:56:48] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:57:04] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[19:57:06] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:57:07] [Server thread/INFO]: System chat: AnsharST has made the advancement [Not Today, Thank You]
-[19:57:14] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[19:57:16] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[19:57:21] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:57:42] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:57:59] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:58:05] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[19:58:23] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:58:24] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[19:58:33] [Server thread/INFO]: System chat: AnsharST has made the advancement [Hot Stuff]
-[19:58:34] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:58:42] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[19:58:49] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[19:58:59] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:59:09] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[19:59:20] [Server thread/INFO]: System chat: joey991 has made the advancement [Acquire Hardware]
-[19:59:29] [Server thread/INFO]: System chat: joey991 has made the advancement [Suit Up]
-[19:59:42] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[19:59:42] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[19:59:49] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[19:59:53] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:00:06] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:00:30] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:00:46] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:00:57] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:01:10] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:01:13] [Server thread/INFO]: System chat: joey991 has made the advancement [Isn't It Iron Pick?]
-[20:01:56] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:02:20] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:02:22] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:02:46] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:02:46] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[20:02:51] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:03:01] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[20:03:04] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:03:07] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:03:22] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:03:39] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:03:43] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:03:55] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:03:58] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[20:04:19] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:04:37] [Server thread/INFO]: System chat: joey991 has made the advancement [Diamonds!]
-[20:04:44] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[20:04:58] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:05:10] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[20:05:21] [Server thread/INFO]: System chat: AnsharST has made the advancement [Diamonds!]
-[20:05:24] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:05:28] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:05:42] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[20:05:52] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:06:03] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:07:00] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:07:08] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:07:32] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:07:48] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:07:53] [Server thread/INFO]: System chat: Jysusplash was blown up by Creeper
-[20:08:01] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[20:08:06] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:08:19] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:08:19] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:08:31] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[20:08:31] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:08:42] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:08:42] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:08:45] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[20:08:59] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:09:05] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:09:06] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[20:09:22] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:09:29] [Server thread/INFO]: System chat: Jysusplash has made the advancement [Diamonds!]
-[20:09:32] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:09:43] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[20:09:46] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:09:54] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:10:00] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:10:14] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:10:25] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:10:27] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:10:28] [Server thread/INFO]: System chat: Jysusplash has made the advancement [Suit Up]
-[20:10:42] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:10:48] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[20:10:52] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:11:03] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:11:03] [Server thread/INFO]: System chat: joey991 fell from a high place
-[20:11:04] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:11:13] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:11:14] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:11:23] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:11:25] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:11:34] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[20:11:37] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:11:44] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:11:51] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:11:54] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:11:55] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[20:12:02] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:12:05] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:12:05] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[20:12:12] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:12:18] [Server thread/INFO]: System chat: AnsharST tried to swim in lava to escape Zombie
-[20:12:18] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:12:20] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[20:12:29] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:12:31] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:12:34] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[20:12:36] [Server thread/INFO]: System chat: Jysusplash has made the advancement [Not Today, Thank You]
-[20:12:41] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:12:47] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:13:02] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:13:02] [Server thread/INFO]: System chat: Jysusplash was slain by Zombie
-[20:13:12] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:13:14] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[20:13:16] [Server thread/INFO]: System chat: Jysusplash was slain by Zombie
-[20:13:24] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[20:13:38] [Server thread/INFO]: System chat: joey991 fell from a high place
-[20:13:40] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:13:53] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:14:12] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[20:14:16] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:14:16] [Server thread/WARN]: joey991 moved too quickly! 7.9644099354257705,-6.078400001525879,0.140446961138748
-[20:14:16] [Server thread/INFO]: System chat: Jysusplash was slain by Zombie
-[20:14:19] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:14:22] [Server thread/INFO]: Player Jysusplash standing on air - force-sending blocks below
-[20:14:45] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:14:57] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:15:12] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:15:22] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:15:22] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:15:32] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:15:38] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:15:42] [Server thread/INFO]: Jysusplash lost connection: Disconnected
-[20:15:42] [Server thread/INFO]: System chat: Jysusplash left the game
-[20:15:44] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:15:53] [Server thread/INFO]: Player joey991 standing on air - force-sending blocks below
-[20:15:54] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:16:11] [Server thread/INFO]: Player AnsharST standing on air - force-sending blocks below
-[20:16:20] [Server thread/INFO]: AnsharST lost connection: Disconnected
-[20:16:20] [Server thread/INFO]: System chat: AnsharST left the game
-[20:16:29] [Server thread/INFO]: joey991 lost connection: Disconnected
-[20:16:29] [Server thread/INFO]: System chat: joey991 left the game
+[00:00:14] [Server thread/INFO]: Player AngelGamer200 standing on air - force-sending blocks below
+[00:00:36] [Server thread/INFO]: Player AngelGamer200 standing on air - force-sending blocks below
+[00:00:46] [Server thread/INFO]: Player AngelGamer200 standing on air - force-sending blocks below
+[00:01:02] [Server thread/INFO]: Player AngelGamer200 standing on air - force-sending blocks below
+[00:01:14] [Server thread/INFO]: Player AngelGamer200 standing on air - force-sending blocks below
+[00:01:33] [Server thread/INFO]: Player AngelGamer200 standing on air - force-sending blocks below
+[00:01:52] [Server thread/INFO]: Player AngelGamer200 standing on air - force-sending blocks below
+[00:02:10] [Server thread/INFO]: Player AngelGamer200 standing on air - force-sending blocks below
+[00:02:23] [Server thread/INFO]: Player AngelGamer200 standing on air - force-sending blocks below
+[00:02:37] [Server thread/INFO]: Player AngelGamer200 standing on air - force-sending blocks below
+[00:03:02] [Server thread/INFO]: Player AngelGamer200 standing on air - force-sending blocks below
+[00:03:15] [Server thread/INFO]: Player AngelGamer200 standing on air - force-sending blocks below
+[00:03:27] [Server thread/INFO]: Player AngelGamer200 standing on air - force-sending blocks below
+[00:03:38] [Server thread/INFO]: Player AngelGamer200 standing on air - force-sending blocks below
+[00:03:49] [Server thread/INFO]: Player AngelGamer200 standing on air - force-sending blocks below
+[00:04:08] [Server thread/INFO]: Player AngelGamer200 standing on air - force-sending blocks below
+[00:04:22] [Server thread/INFO]: Player AngelGamer200 standing on air - force-sending blocks below
+[00:05:03] [Server thread/INFO]: Player AngelGamer200 standing on air - force-sending blocks below
+[00:05:14] [Server thread/INFO]: Player AngelGamer200 standing on air - force-sending blocks below
+[00:05:48] [Server console handler/ERROR]: Exception handling console input
+java.io.IOException: Input/output error
+	at java.base/java.io.FileInputStream.readBytes(Native Method)
+	at java.base/java.io.FileInputStream.read(FileInputStream.java:281)
+	at java.base/java.lang.System$In.read(System.java:1872)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:328)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:388)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:279)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:322)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:186)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:183)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:166)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:333)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:400)
+	at net.minecraft.server.dedicated.DedicatedServer$1.run(DedicatedServer.java:146)
+[00:05:48] [Server thread/INFO]: Stopping server
+[00:05:48] [Server thread/INFO]: Saving players
